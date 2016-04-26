@@ -1,0 +1,99 @@
+body, html, section {
+    font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+/* TABS CLASSES */
+
+.tabs {
+	display: none;
+}
+
+.tabs .tab-block {
+	
+}
+
+.tabs .tab-block.selected {
+	
+}
+
+.tabs .tab-block .tab-content {
+	display: none;
+}
+
+.tabs .tab-block.selected .tab-content {
+	display: block;
+}
+
+
+/* SCROLL SPY CLASSES */
+
+.scroll-spy {
+	width: 100%;
+	height: 75px;
+	background-color: rgba(0, 0, 0, 1);
+	position: fixed;
+	background-color: rgba(4, 180, 49, 0.6);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.scroll-spy .scroll-spy-menu {
+	width: 980px;
+	height: 75px;
+	margin: 0 auto;
+}
+
+.scroll-spy .scroll-spy-menu ul {
+	margin: 15px 0 0 0;
+}
+
+.scroll-spy .scroll-spy-menu ul li {
+	list-style: none;
+	margin: 0 30px 0 0;
+	display: inline;
+}
+
+.scroll-spy .scroll-spy-menu a {
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+.scroll-spy .scroll-spy-menu .active {
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+#home {
+	background-color: grey;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#portfolio {
+	height: 100%;
+	width: 100%;
+}
+
+#about {
+	background-color: blue;
+	height: 100%;
+	width: 100%;
+}
+
+#contact {
+	background-color: red;
+	height: 100%;
+	width: 100%;
+}
