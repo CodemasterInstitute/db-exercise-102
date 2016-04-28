@@ -1,47 +1,45 @@
 
 window.onload = function() {
+    
+    // RESOURCES
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+    
 
 	// TABS
 
-	var tabs = document.querySelectorAll('.tab-block .tab');
+    // query DOM for all elements with a ClassName of 'tab'
+    
 
-	for (var i = 0; i < tabs.length; i++) {
-		var tab = tabs[i];
+    // add an onclick function each tab
+    
 
-		tab.onclick = tabClick
-	}
-
-	function tabClick(event) {
-
-		var selectedTab = document.querySelector('.tab-block.selected');
-
-		selectedTab.classList.remove('selected');
-
-		this.parentNode.classList.add('selected');
-	}
+    // declare the onclick function
+    
 
 
 	// SCROLL SPY
 
-	var section = document.querySelectorAll(".section");
-	var sections = {};
-	var i = 0;
-
-	Array.prototype.forEach.call(section, function(e) {
-		sections[e.id] = e.offsetTop;
-	});
-
+    // query DOM for all elements with a ClassName of 'section'
+    
+    
+    // iterate through each section and add the element 'id' and the elements 'offsetTop' value to an object map
+    // REFERENCE: Exercise 8 of https://github.com/CodemasterInstitute/db-exercise-006/blob/master/scripts.js 
+    
+    
 	window.onscroll = function() {
-		var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        // determine scrolled distance from the top
+        
 
-		for (i in sections) {
+        // iterate over the object map defined earlier
+        
 
-			if (sections[i] <= scrollPosition) {
-				document.querySelector('.active').setAttribute('class', ' ');
-				document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
-			}
+        // --- check each section and determine if its offsetTop value is less than or equal to the scrolled distance from the top value
+        // --- --- if it is then find the section that currently has the 'active' ClassName applied and remove that class
+        // --- --- then, apply that ClassName to the current section
+        
 
-		}
+        
 	};
 
 

@@ -10,15 +10,15 @@ body, html, section {
 /* TABS CLASSES */
 
 .tabs {
-	display: none;
+
 }
 
 .tabs .tab-block {
-	
+
 }
 
 .tabs .tab-block.selected {
-	
+
 }
 
 .tabs .tab-block .tab-content {
@@ -38,10 +38,6 @@ body, html, section {
 	background-color: rgba(0, 0, 0, 1);
 	position: fixed;
 	background-color: rgba(4, 180, 49, 0.6);
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .scroll-spy .scroll-spy-menu {
